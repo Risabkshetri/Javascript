@@ -2,13 +2,58 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-   
-    <title>Dom Learning</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Learning</title>{
 </head>
-<body>
-    <div class="bg-black">
-    <h1>DOM Learning on chai aur code</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident tenetur harum eaque atque, deleniti perferendis recusandae officiis, quis, voluptatibus suscipit vel. Culpa laborum molestias omnis delectus animi ut architecto quia!</p>
-    </div>
+<body style="background-color: rgb(27, 27, 31); color: white;">
+    <!-- <div class="bg-black">
+        <h1 id="title" class="heading">Dom Learning with chai aur code</h1> //when I excess the class on console, I need to remember console cosider class name rather than only class
+        <h1>Lorem, ipsum dolor.</h1>
+        <h1>Lorem, ipsum dolor.</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore.</p>
+<ul>
+    <li>one</li>
+    <li>two</li>
+    <li>three</li>
+</ul>
+    </div> -->
+
+    <!-- <div class="parent">
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+    </div> -->
 </body>
+<!-- <script>
+    const parent = document.querySelector('.parent')
+    // console.log(parent.children[1].innerHTML);
+
+    for(let i=0;i<parent.children.length;i++){
+       console.log(parent.children[i].innerHTML);
+    }
+
+    parent.children[2].style.color="red"
+//    console.log(parent.firstElementChild.innerHTML);
+//    console.log(parent.lastElementChild.innerHTML);
+const dayone =  document.querySelector('.day')
+// console.log(dayone.parentElement);
+// console.log(dayone.nextElementSibling.innerHTML);
+
+console.log("nodes:",parent.childNodes)
+
+</script> -->
+<script>
+   const div =  document.createElement('div')
+   console.log(div)
+   div.clasName = 'main'
+   div.id = Math.round(Math.random()*10+1)
+   div.setAttribute('title','generated content')
+   div.style.backgroundColor = 'red'
+   div.style.borderColor = 'white'
+//    div.innerText = 'generated content'
+   div.creatTextNode('generated content')
+   div.appendChild(addText)
+   document.body.appendChild(div)
+</script>
 </html>
